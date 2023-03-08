@@ -40,12 +40,23 @@ for(i=0; i<MembriTeam.length; i++){
 
 
 
-
-function stampasudom (i,){/*Funzione di stampa su Dom*/ 
+/*
+function stampasudom (i,){/*Funzione di stampa su Dom
    let nomemembrocorrente = document.getElementById('nome'+i);
    let ruolomembrocorrente = document.getElementById('ruolo'+i);
    let fotomembrocorrente = document.getElementById('foto url'+i);
    nomemembrocorrente.innerHTML = MembriTeam[i].nome;
    ruolomembrocorrente.innerHTML = MembriTeam[i].ruolo;
    fotomembrocorrente.innerHTML = MembriTeam[i].foto_url;
+}/**/
+
+function stampasudom (i,){
+   let nomemembrocorrente = document.getElementById('nome'+i);
+   let ruolomembrocorrente = document.getElementById('ruolo'+i);
+   let fotomembrocorrente = document.getElementById('foto url'+i);
+   nomemembrocorrente.innerHTML = MembriTeam[i].nome;
+   ruolomembrocorrente.innerHTML = MembriTeam[i].ruolo;
+   urlfotomembro = MembriTeam[i].foto_url;
+   fotomembrocorrente.setAttribute("src" ,urlfotomembro);
+   console.log
 }
