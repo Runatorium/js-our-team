@@ -30,3 +30,15 @@ let MembriTeam = [
         'foto url': 'barbara-ramos-graphic-designer.jpg' 
     },
 ]
+
+
+for(i=0; i<MembriTeam.length; i++){
+    let membrocorrente = MembriTeam[i];
+    console.log((membrocorrente['nome'])+(membrocorrente['ruolo'])+(membrocorrente['foto url']));
+}
+
+/*
+for(i=0;i<MembriTeam.length; i++){
+    console.log(MembriTeam[i]);
+}
+*/
