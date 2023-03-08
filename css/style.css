@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+}
+
+.card{
+    display: flex;
+    width: 265px;
+    height: 321px;
+    justify-content: center;
+    border-style: groove;
+    margin: 50px;
+}
+
+img{
+    width: 300px;
+    height: 284px;
+    object-fit: contain;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    text-align: center;
+}

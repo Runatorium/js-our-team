@@ -31,26 +31,21 @@ let MembriTeam = [
     },
 ]
 
+stampasuconsole();
 
-for(i=0; i<MembriTeam.length; i++){
-    let membrocorrente = MembriTeam[i];
-    console.log((membrocorrente['nome'])+(membrocorrente['ruolo'])+(membrocorrente['foto url']));
-    stampasudom(i)
+
+
+function stampasuconsole(){
+    for(i=0; i<MembriTeam.length; i++){
+        let membrocorrente = MembriTeam[i];
+        console.log((membrocorrente['nome'])+(membrocorrente['ruolo'])+(membrocorrente['foto url']));
+        stampasudom(i)
+    }
 }
 
 
 
-/*
-function stampasudom (i,){/*Funzione di stampa su Dom
-   let nomemembrocorrente = document.getElementById('nome'+i);
-   let ruolomembrocorrente = document.getElementById('ruolo'+i);
-   let fotomembrocorrente = document.getElementById('foto url'+i);
-   nomemembrocorrente.innerHTML = MembriTeam[i].nome;
-   ruolomembrocorrente.innerHTML = MembriTeam[i].ruolo;
-   fotomembrocorrente.innerHTML = MembriTeam[i].foto_url;
-}/**/
-
-function stampasudom (i,){
+function stampasudom (i){
    let nomemembrocorrente = document.getElementById('nome'+i);
    let ruolomembrocorrente = document.getElementById('ruolo'+i);
    let fotomembrocorrente = document.getElementById('foto url'+i);
