@@ -57,6 +57,6 @@ function stampasudom (i,){
    nomemembrocorrente.innerHTML = MembriTeam[i].nome;
    ruolomembrocorrente.innerHTML = MembriTeam[i].ruolo;
    urlfotomembro = MembriTeam[i].foto_url;
-   fotomembrocorrente.setAttribute("src" ,urlfotomembro);
+   fotomembrocorrente.setAttribute("src" ,"./img/"+urlfotomembro);
    console.log
 }
