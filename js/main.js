@@ -2,32 +2,32 @@ let MembriTeam = [
     {
         'nome' : 'Wayne Barnett',
         'ruolo': 'Founder & CEO',
-        'foto url': 'wayne-barnett-founder-ceo.jpg' 
+        foto_url: 'wayne-barnett-founder-ceo.jpg' 
     },
     {
         'nome' : 'Angela Caroll',
         'ruolo': 'Chief Editor',
-        'foto url': 'angela-caroll-chief-editor.jpg' 
+        foto_url: 'angela-caroll-chief-editor.jpg' 
     },
     {
         'nome' : 'Walter Gordon',
         'ruolo': 'Office Manager',
-        'foto url': 'walter-gordon-office-manager.jpg' 
+        foto_url: 'walter-gordon-office-manager.jpg' 
     },
     {
         'nome' : 'Angela Lopez',
         'ruolo': 'Social Media Manager',
-        'foto url': 'angela-lopez-social-media-manager.jpg' 
+        foto_url: 'angela-lopez-social-media-manager.jpg' 
     },
     {
         'nome' : 'Scott Estrada',
         'ruolo': 'Developer',
-        'foto url': 'scott-estrada-developer.jpg' 
+        foto_url: 'scott-estrada-developer.jpg' 
     },
     {
         'nome' : 'Barbara Ramos',
         'ruolo': 'Graphic Designer',
-        'foto url': 'barbara-ramos-graphic-designer.jpg' 
+        foto_url: 'barbara-ramos-graphic-designer.jpg' 
     },
 ]
 
@@ -35,10 +35,17 @@ let MembriTeam = [
 for(i=0; i<MembriTeam.length; i++){
     let membrocorrente = MembriTeam[i];
     console.log((membrocorrente['nome'])+(membrocorrente['ruolo'])+(membrocorrente['foto url']));
+    stampasudom(i)
 }
 
-/*
-for(i=0;i<MembriTeam.length; i++){
-    console.log(MembriTeam[i]);
+
+
+
+function stampasudom (i,){/*Funzione di stampa su Dom*/ 
+   let nomemembrocorrente = document.getElementById('nome'+i);
+   let ruolomembrocorrente = document.getElementById('ruolo'+i);
+   let fotomembrocorrente = document.getElementById('foto url'+i);
+   nomemembrocorrente.innerHTML = MembriTeam[i].nome;
+   ruolomembrocorrente.innerHTML = MembriTeam[i].ruolo;
+   fotomembrocorrente.innerHTML = MembriTeam[i].foto_url;
 }
-*/
